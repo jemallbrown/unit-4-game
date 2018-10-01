@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <!-- bootstrap link.  Uncomment if needed for this site --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- jQuery link.  Uncomment if needed for this site -->
+    <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div class ="container">
+        <h1>Crystals Collector!</h1>
+    </div>
+
+    <div class="container">
+        <p>You will be given a random number at the start of the game (between 19 and 120).</p>
+        <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score. (number between 1 and 12).</p>
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the vaules of each crystal.</p>
+
+    </div>
+
+    <div class="container">
+        <div id="displayRandom" class="col-md-6"></div>
+        <div class="col-md-3">
+            <p id="displayWins">Wins = 0</p>
+            <p id="displayLosses">Losses = 0</p>
+        </div>
+    </div>
+
+    <!-- container for the jewels -->
+    <div class="container-fluid">
+        <div class="col-md-3">
+            <!--<img src="./assets/images/diamond.jpg" alt="diamond">-->
+            <button id="diamond-btn" class="btn"><img style="height: 50px; width: 50px" src="./assets/images/diamond.jpg" alt="Diamond"></button>
+        </div>
+
+        <div class="col-md-3">
+            <!--<img src="./assets/images/diamond.jpg" alt="diamond">-->
+            <button id="blue-btn" class="btn"><img style="height: 50px; width: 50px" src="./assets/images/blue_jewel.jpeg" alt="Blue Jewel"></button>
+        </div>
+
+        <div class="col-md-3">
+            <!--<img src="./assets/images/diamond.jpg" alt="diamond">-->
+            <button id="purple-btn" class="btn"><img style="height: 50px; width: 50px" src="./assets/images/purple_jewel.jpeg" alt="Purple Jewel"></button>
+        </div>
+
+        <div class="col-md-3">
+            <!--<img src="./assets/images/diamond.jpg" alt="diamond">-->
+            <button id="green-btn" class="btn"><img style="height: 50px; width: 50px" src="./assets/images/green_jewel.jpeg" alt="Green Jewel"></button>
+        </div>
+    </div>
+
+<!-- display total score at bottom of the screen -->
+<div class="container">
+    <div class="row">
+    <p>
+        Your Total Score Is
+    </p>
+    </div>
+    <div class="row"></div>
+    <div class="row">
+    <div id="displayScore">0</div>
+    </div>
+</div>
+
+<script src="./assets/javascript/game.js"></script>
+
+</body>
+</html>
+
