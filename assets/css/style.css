@@ -1,0 +1,57 @@
+body {
+    background-image: url(../images/background.jpeg)
+}
+
+#instructions {
+    background: coral;
+    padding: 40px;
+    font-size: 18px;
+    margin: 10px;
+    width: auto;
+}
+
+.scores {
+    height: 50px;
+}
+
+#displayLosses, #displayWins {
+    height: auto;
+    padding: auto;
+    width: 100%;
+
+}
+
+.currentnumber {
+    padding: 10px;
+    size: 30px;
+    background: rgb(103, 202, 103)
+}
+
+#winloose {
+    background: yellow;
+    height: 100px;
+    font-size: 18px;
+}
+.userTotal{
+    clear: both;
+	width: 15%;
+	height: 60px;
+}
+.totalscore, .currentnumber{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: aquamarine;
+    width: 100%;
+}
+
+.jewelscontainer {
+    margin-top: 40px;
+    clear: both;
+    height: 80px;
+    width: 100%;
+}
+
+.jewels {
+    height: 50px;
+    width: 50px;
+}

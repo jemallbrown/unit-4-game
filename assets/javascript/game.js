@@ -9,12 +9,17 @@ $( document ).ready(function() {
 var playerTotal = 0;
 var losses = 0;
 var wins = 0;
+var min = 19
+var max = 120
 
 //You will be given a random number at the start of the game (between 19 and 120).
+// return Math.floor(Math.random() * (max - min + 1) ) + min;
 
-var randomNumber = Math.floor(Math.random() * 102) + 19;
 
-document.getElementById("displayRandom").innerHTML = (randomNumber);
+var randomNumber = Math.floor(Math.random() * (max - min + 1) ) + min;
+
+// document.getElementById("displayRandom").innerHTML = (randomNumber);
+$("#displayRandom").html(randomNumber);
 
 console.log("The current Random number is " + randomNumber);
 
@@ -51,7 +56,7 @@ var resetNumbers = function (){
 function gamePlay(){
         console.log("entered gamePlay function")
         if (playerTotal > randomNumber) {
-                alert ("you lose!")
+                // alert ("you lose!")
                 playerTotal = 0;
                 losses = losses + 1
                 document.getElementById("displayLosses").innerHTML = ("Losses = " + losses);
@@ -59,9 +64,10 @@ function gamePlay(){
         }
         
         if (playerTotal == randomNumber){
-                alert ("you won the game!!!");
+                // alert ("you won the game!!!");
                 playerTotal = 0;
-                wins = wins + 1
+                wins = wins + 1;
+                playerTotal = 0;
                 document.getElementById("displayWins").innerHTML = ("Wins = " + wins);
                 resetNumbers();
                 }
